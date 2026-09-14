@@ -1,0 +1,41 @@
+-------------------------------------------------------------------------------
+Test set: com.example.LionTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 3, Skipped: 0, Time elapsed: 0.143 s <<< FAILURE! -- in com.example.LionTest
+com.example.LionTest.testLionFemale -- Time elapsed: 0.125 s <<< ERROR!
+java.lang.Exception: Используйте допустимые значения пола животного - самец или самка
+	at com.example.Lion.<init>(Lion.java:18)
+	at com.example.LionTest.testLionFemale(LionTest.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+com.example.LionTest.testInvalidSex -- Time elapsed: 0.005 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <╨Ш╤Б╨┐╨╛╨╗╤М╨╖╤Г╨╣╤В╨╡ ╨┤╨╛╨┐╤Г╤Б╤В╨╕╨╝╤Л╨╡ ╨╖╨╜╨░╤З╨╡╨╜╨╕╤П ╨┐╨╛╨╗╨░ ╨╢╨╕╨▓╨╛╤В╨╜╨╛╨│╨╛ - ╤Б╨░╨╝╨╡╤Ж ╨╕╨╗╨╕ ╤Б╨░╨╝╨║╨░> but was: <Используйте допустимые значения пола животного - самец или самка>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at com.example.LionTest.testInvalidSex(LionTest.java:59)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+com.example.LionTest.testGetKittensWithFeline -- Time elapsed: 0.005 s <<< ERROR!
+java.lang.Exception: Используйте допустимые значения пола животного - самец или самка
+	at com.example.Lion.<init>(Lion.java:18)
+	at com.example.LionTest.testGetKittensWithFeline(LionTest.java:68)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+com.example.LionTest.testLionMale -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.Exception: Используйте допустимые значения пола животного - самец или самка
+	at com.example.Lion.<init>(Lion.java:18)
+	at com.example.LionTest.testLionMale(LionTest.java:25)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
